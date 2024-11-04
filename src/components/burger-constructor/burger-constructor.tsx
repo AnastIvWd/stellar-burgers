@@ -26,7 +26,7 @@ export const BurgerConstructor: FC = () => {
     }
     const order = constructorItems.ingredients
       .map(({ _id }) => _id)
-      .concat([constructorItems.bun._id]);
+      .concat([constructorItems.bun._id, constructorItems.bun._id]);
     dispatch(orderBurgerApiThunk(order));
   };
   const closeOrderModal = () => {

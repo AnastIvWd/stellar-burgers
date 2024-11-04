@@ -12,7 +12,7 @@ export const BurgerConstructorElement: FC<BurgerConstructorElementProps> = memo(
     const handleMoveUp = () => {};
 
     const handleClose = () => {
-      dispatch(removeIngredient(index));
+      dispatch(removeIngredient(ingredient.id));
     };
 
     return (

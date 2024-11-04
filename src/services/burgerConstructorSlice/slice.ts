@@ -40,8 +40,11 @@ export const ingredientsSlice = createSlice({
     addIngredient(state, action: PayloadAction<TConstructorIngredient>) {
       state.constructorItems.ingredients.push(action.payload);
     },
-    removeIngredient(state, action: PayloadAction<number>) {
-      state.constructorItems.ingredients.splice(action.payload, 1);
+    removeIngredient(state, action: PayloadAction<string>) {
+      state.constructorItems.ingredients =
+        state.constructorItems.ingredients.filter(
+          (item) => item.id !== action.payload
+        );
     },
     resetOrder(state) {
       state.orderRequest.order = [];
