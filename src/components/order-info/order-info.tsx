@@ -11,7 +11,7 @@ export const OrderInfo: FC = () => {
   const { number } = useParams();
   const dispatch = useDispatch();
   const orderData = useSelector((store) =>
-    store.orders.feeds.orders.find((order) => order.number === Number(number))
+    store.orders.feeds.orders.find((order) => order.number)
   );
 
   const ingredients = useSelector((store) => store.ingredients.ingredients);
