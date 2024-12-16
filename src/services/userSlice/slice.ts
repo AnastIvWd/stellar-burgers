@@ -35,9 +35,9 @@ export const userSlice = createSlice({
       .addCase(loginUserThunk.pending, (state) => {
         state.isLoading = true;
       })
-      .addCase(loginUserThunk.fulfilled, (state, action) => {
+      .addCase(loginUserThunk.fulfilled, (state, { payload }) => {
         state.isLoading = false;
-        state.user = action.payload;
+        state.user = payload;
       })
       .addCase(loginUserThunk.rejected, (state) => {
         state.isLoading = false;
@@ -47,9 +47,9 @@ export const userSlice = createSlice({
       .addCase(registerUserThunk.pending, (state) => {
         state.isLoading = true;
       })
-      .addCase(registerUserThunk.fulfilled, (state, action) => {
+      .addCase(registerUserThunk.fulfilled, (state, { payload }) => {
         state.isLoading = false;
-        state.user = action.payload;
+        state.user = payload;
       })
       .addCase(registerUserThunk.rejected, (state) => {
         state.isLoading = false;
@@ -59,9 +59,9 @@ export const userSlice = createSlice({
       .addCase(updateUserThunk.pending, (state) => {
         state.isLoading = true;
       })
-      .addCase(updateUserThunk.fulfilled, (state, action) => {
+      .addCase(updateUserThunk.fulfilled, (state, { payload }) => {
         state.isLoading = false;
-        state.user = action.payload.user;
+        state.user = payload.user;
       })
       .addCase(updateUserThunk.rejected, (state) => {
         state.isLoading = false;
@@ -83,9 +83,9 @@ export const userSlice = createSlice({
       .addCase(checkUserAuthThunk.pending, (state) => {
         state.isLoading = true;
       })
-      .addCase(checkUserAuthThunk.fulfilled, (state, action) => {
+      .addCase(checkUserAuthThunk.fulfilled, (state, { payload }) => {
         state.isLoading = false;
-        state.user = action.payload;
+        state.user = payload;
       })
       .addCase(checkUserAuthThunk.rejected, (state) => {
         state.isLoading = false;

@@ -1,0 +1,71 @@
+{
+  "success": true,
+  "data": [
+    {
+      "_id": "1",
+      "name": "Говяжья котлета",
+      "type": "main",
+      "proteins": 24,
+      "fat": 17,
+      "carbohydrates": 0,
+      "calories": 250,
+      "price": 300,
+      "image": "test1",
+      "image_large": "test1",
+      "image_mobile": "test1"
+    },
+    {
+      "_id": "2",
+      "name": "Булочка с кунжутом",
+      "type": "bun",
+      "proteins": 9,
+      "fat": 4,
+      "carbohydrates": 30,
+      "calories": 200,
+      "price": 50,
+      "image": "test2",
+      "image_large": "test2",
+      "image_mobile": "test2"
+    },
+    {
+      "_id": "3",
+      "name": "Сыр Чеддер",
+      "type": "main",
+      "proteins": 20,
+      "fat": 33,
+      "carbohydrates": 1,
+      "calories": 350,
+      "price": 150,
+      "image": "test3",
+      "image_large": "test3",
+      "image_mobile": "test3"
+    },
+    {
+      "_id": "4",
+      "name": "Салат Айсберг",
+      "type": "main",
+      "proteins": 1,
+      "fat": 0,
+      "carbohydrates": 3,
+      "calories": 15,
+      "price": 30,
+      "image": "test4",
+      "image_large": "test4",
+      "image_mobile": "test4"
+    },
+    {
+      "_id": "5",
+      "name": "Соус барбекю",
+      "type": "sauce",
+      "proteins": 1,
+      "fat": 0,
+      "carbohydrates": 10,
+      "calories": 50,
+      "price": 60,
+      "image": "test5",
+      "image_large": "test5",
+      "image_mobile": "test5"
+    }
+  ]  
+}
+

@@ -37,11 +37,11 @@ const ordersSlice = createSlice({
       .addCase(getFeedsThunk.pending, (state) => {
         state.feeds.isLoading = true;
       })
-      .addCase(getFeedsThunk.fulfilled, (state, action) => {
+      .addCase(getFeedsThunk.fulfilled, (state, { payload }) => {
         state.feeds.isLoading = false;
-        state.feeds.orders = action.payload.orders;
-        state.feeds.total = action.payload.total;
-        state.feeds.totalToday = action.payload.totalToday;
+        state.feeds.orders = payload.orders;
+        state.feeds.total = payload.total;
+        state.feeds.totalToday = payload.totalToday;
       })
       .addCase(getFeedsThunk.rejected, (state) => {
         state.feeds.isLoading = false;
@@ -52,9 +52,9 @@ const ordersSlice = createSlice({
       .addCase(gerOrdersThunk.pending, (state) => {
         state.orders.isLoading = true;
       })
-      .addCase(gerOrdersThunk.fulfilled, (state, action) => {
+      .addCase(gerOrdersThunk.fulfilled, (state, { payload }) => {
         state.orders.isLoading = false;
-        state.orders.items = action.payload;
+        state.orders.items = payload;
       })
       .addCase(gerOrdersThunk.rejected, (state) => {
         state.orders.isLoading = false;

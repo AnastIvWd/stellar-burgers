@@ -9,7 +9,7 @@ import {
   refreshToken,
   TLoginData,
   TRegisterData
-} from '@api';
+} from '../../utils/burger-api';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import { setCookie, getCookie } from '../../utils/cookie';
 import { checkUserAuth } from './slice';
