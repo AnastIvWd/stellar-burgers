@@ -1,0 +1,13 @@
+{
+  "success": true,
+  "name": "Говяжий бургер",
+  "order": {
+    "_id": "1-1",
+    "status": "Готов",
+    "name": "Говяжий бургер",
+    "createdAt": "12:00",
+    "updatedAt": "12:00",
+    "number": "123",
+    "ingredients": ["2", "1", "5", "2"]
+  }
+}
